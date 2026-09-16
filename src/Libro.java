@@ -13,6 +13,45 @@ public class Libro {
         this.genero = genero;
         this.anioPublicacion = anioPublicacion;
         this.copiasDisponibles = copiasDisponibles;
-
+    }
+    public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    public String getAutor() {
+        return autor;
+    }
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+    public String getCodigo() {
+        return codigo;
+    }
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+    public String getGenero() {
+        return genero;
+    }
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+    public int getAnioPublicacion() {
+        return anioPublicacion;
+    }
+    public void setAnioPublicacion(int anioPublicacion) {
+        this.anioPublicacion = anioPublicacion;
+    }
+    public int getCopiasDisponibles() {
+        return copiasDisponibles;
+    }
+    public void setCopiasDisponibles(int copiasDisponibles) {
+        this.copiasDisponibles = copiasDisponibles;
+    }
+    @Override
+    public String toString() {
+        return titulo + "-" + autor + "-" + codigo + "-" + genero + "-" + anioPublicacion + "-" + copiasDisponibles;
     }
 }
