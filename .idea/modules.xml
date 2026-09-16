@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/ProyectoBiblioteca.iml" filepath="$PROJECT_DIR$/.idea/ProyectoBiblioteca.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/ProyectoBiblioteca.iml" filepath="$PROJECT_DIR$/ProyectoBiblioteca.iml" />
+>>>>>>> a15fc2e (Creamos el primer src con el nombre Biblioteca)
     </modules>
   </component>
 </project>
