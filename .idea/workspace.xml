@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e818d7bd-5cc6-4600-8967-f660c3374f11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Biblioteca.java" afterDir="false" />
-    </list>
+    <list default="true" id="e818d7bd-5cc6-4600-8967-f660c3374f11" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +12,65 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="7.216063637239635E-11" />
+      <entry key="MS500" value="0.010526889588455633" />
+      <entry key="S2" value="0.7502031610994568" />
+      <entry key="S5" value="3.6175246111029065" />
+      <entry key="S10" value="10.769322678900183" />
+      <entry key="S30" value="38.77494668728172" />
+      <entry key="S60" value="66.50010826673685" />
+      <entry key="M2" value="99.98690210141771" />
+      <entry key="M5" value="139.9666422958419" />
+      <entry key="M10" value="159.92874818584565" />
+      <entry key="M15" value="167.6463054030649" />
+      <entry key="M30" value="175.98303223127257" />
+      <entry key="H1" value="180.40241614133538" />
+      <entry key="H2" value="182.67840083788968" />
+      <entry key="H4" value="183.83343054957024" />
+      <entry key="D1" value="184.8047645379777" />
+      <entry key="W1" value="184.9720893742786" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000007262575" />
+      <entry key="S10" value="1.0000269491631621" />
+      <entry key="S30" value="1.029981159712102" />
+      <entry key="S60" value="1.1731506849888322" />
+      <entry key="M2" value="1.416113788510826" />
+      <entry key="M5" value="1.7041818754220064" />
+      <entry key="M10" value="1.8391554536687509" />
+      <entry key="M15" value="1.8896686370781" />
+      <entry key="M30" value="1.9432224748584503" />
+      <entry key="H1" value="1.9711964141503235" />
+      <entry key="H2" value="1.985492980264356" />
+      <entry key="H4" value="1.992719990865681" />
+      <entry key="D1" value="1.9987829682317393" />
+      <entry key="W1" value="1.9998260475667866" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="8.813044658226479E-5" />
+      <entry key="MS500" value="0.16030537489596802" />
+      <entry key="S2" value="1.2876347784662137" />
+      <entry key="S5" value="4.305779282763031" />
+      <entry key="S10" value="11.552198536284665" />
+      <entry key="S30" value="39.686136135670694" />
+      <entry key="S60" value="67.57436490455055" />
+      <entry key="M2" value="101.31310978461265" />
+      <entry key="M5" value="141.60801219009068" />
+      <entry key="M10" value="161.72866199226468" />
+      <entry key="M15" value="169.50768410180558" />
+      <entry key="M30" value="177.91092897827593" />
+      <entry key="H1" value="182.36563055491763" />
+      <entry key="H2" value="184.65981983810306" />
+      <entry key="H4" value="185.82409239266795" />
+      <entry key="D1" value="186.8032015073302" />
+      <entry key="W1" value="186.9718659201256" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
@@ -24,25 +81,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/EjerciciosMetodo/ProyectoBiblioteca/ProyectoBiblioteca/src/Main.java",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/EjerciciosMetodo/ProyectoBiblioteca/ProyectoBiblioteca/src/Main.java&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
