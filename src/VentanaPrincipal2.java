@@ -1,5 +1,9 @@
 import javax.swing.*;
+<<<<<<< HEAD
 import javax.swing.table.DefaulTableModel;
+=======
+import javax.swing.table.DefaultTableModel;
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,6 +24,7 @@ public class VentanaPrincipal extends JFrame {
     private DefaultTableModel modeloTabla;
 
     private JButton btnAgregar;
+<<<<<<< HEAD
     private JButton getBtnAgregarFiltrar;
     private JButton btnMostrarTodos;
     private JButton btnEliminar;
@@ -29,6 +34,16 @@ public class VentanaPrincipal extends JFrame {
         setTitle("Sistema de Gestión de Biblioteca");
         setSize(900, 600);
 
+=======
+    private JButton btnFiltrar;
+    private JButton btnMostrarTodos;
+    private JButton btnEliminar;
+
+    public VentanaPrincipal() {
+        biblioteca = new Biblioteca();
+        setTitle("Sistema de Gestión de Biblioteca");
+        setSize(900, 600);
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -36,6 +51,7 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void crearInterfaz() {
+<<<<<<< HEAD
         JPanel panelPrincipal=new JPanel();
         panelPrincipal.setLayout(new BorderLayout());
         JPanel panelFormulario=new JPanel();
@@ -48,6 +64,19 @@ public class VentanaPrincipal extends JFrame {
         txtGenero=new JTextField();
         txtAnio=new JTextField();
         txtCopias=new JTextField();
+=======
+        JPanel panelPrincipal = new JPanel();
+        panelPrincipal.setLayout(new BorderLayout());
+        JPanel panelFormulario = new JPanel();
+        panelFormulario.setLayout(new GridLayout(3, 4, 5, 5));
+
+        txtTitulo = new JTextField();
+        txtAutor = new JTextField();
+        txtCodigo = new JTextField();
+        txtGenero = new JTextField();
+        txtAnio = new JTextField();
+        txtCopias = new JTextField();
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
 
         panelFormulario.add(new JLabel("Título:"));
         panelFormulario.add(txtTitulo);
@@ -62,7 +91,11 @@ public class VentanaPrincipal extends JFrame {
         panelFormulario.add(txtGenero);
 
         panelFormulario.add(new JLabel("Año:"));
+<<<<<<< HEAD
         panelFormulario.add(txtAnio):
+=======
+        panelFormulario.add(txtAnio);
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
 
         panelFormulario.add(new JLabel("Copias:"));
         panelFormulario.add(txtCopias);
@@ -77,6 +110,7 @@ public class VentanaPrincipal extends JFrame {
         JPanel panelBusqueda = new JPanel();
         txtBuscarAutor = new JTextField(15);
 
+<<<<<<< HEAD
         panelBusqueda.add(new JLabel("Buscar autor."));
         panelBusqueda.add(txtBuscarAutor);
 
@@ -87,10 +121,23 @@ public class VentanaPrincipal extends JFrame {
                 "Género",
                 "Año",
                 "Copias"
+=======
+        panelBusqueda.add(new JLabel("Buscar autor:"));
+        panelBusqueda.add(txtBuscarAutor);
+
+        String[] columnas = {
+             "Título",
+             "Autor",
+             "Código",
+             "Género",
+             "Año",
+             "Copias"
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
         };
         modeloTabla = new DefaultTableModel(columnas, 0);
         tabla = new JTable(modeloTabla);
         JScrollPane scroll = new JScrollPane(tabla);
+<<<<<<< HEAD
         JPanel panelSuperior = new Jpanel(new BorderLayout());
 
         panelSuperior.add(panelFormulario,BorderLayout.CENTER);
@@ -101,35 +148,69 @@ public class VentanaPrincipal extends JFrame {
 
         panelPrincipal.add(scroll,BorderLayout.CENTER);
 
+=======
+        JPanel panelSuperior = new JPanel(new BorderLayout());
+        panelSuperior.add(panelFormulario,BorderLayout.CENTER);
+        panelSuperior.add(panelBusqueda,BorderLayout.SOUTH);
+
+        panelPrincipal.add(panelSuperior,BorderLayout.NORTH);
+        panelPrincipal.add(scroll,BorderLayout.CENTER);
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
         panelPrincipal.add(panelBusqueda,BorderLayout.SOUTH);
         add(panelPrincipal);
 
         btnAgregar.addActionListener(new ActionListener() {
+<<<<<<< HEAD
             public  void actionPerformed(ActionEvent e){
+=======
+            @Override
+            public void actionPerformed(ActionEvent e) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
                 agregarLibro();
             }
         });
 
         btnFiltrar.addActionListener(new ActionListener() {
+<<<<<<< HEAD
             public void actionPerformed(ActionEvent e){
+=======
+            @Override
+            public void actionPerformed(ActionEvent e) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
                 filtrarLibros();
             }
         });
 
+<<<<<<< HEAD
         btnMostrarTodos.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
+=======
+        btnMostrarTodos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
                 mostrarTodos();
             }
         });
 
+<<<<<<< HEAD
         btnEliminar.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
+=======
+        btnEliminar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
                 eliminarLibro();
             }
         });
     }
 
+<<<<<<< HEAD
     private void agregarLibro(){
+=======
+    private void agregarLibro() {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
         String titulo = txtTitulo.getText().trim();
         String autor = txtAutor.getText().trim();
         String codigo = txtCodigo.getText().trim();
@@ -137,12 +218,16 @@ public class VentanaPrincipal extends JFrame {
         String anioTexto = txtAnio.getText().trim();
         String copiasTexto = txtCopias.getText().trim();
 
+<<<<<<< HEAD
         if (titulo.isEmpty()||
         autor.isEmpty()||codigo.isEmpty()||
         genero.isEmpty()||
         anioTexto.isEmpty()||
         copiasText.isEmpty()) {
 
+=======
+        if (titulo.isEmpty()||autor.isEmpty()||codigo.isEmpty()||genero.isEmpty()||anioTexto.isEmpty()||copiasTexto.isEmpty()) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
             JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.");
             return;
         }
@@ -152,6 +237,7 @@ public class VentanaPrincipal extends JFrame {
         try {
             anio = Integer.parseInt(anioTexto);
             copias = Integer.parseInt(copiasTexto);
+<<<<<<< HEAD
         }catch (NumberFormatException e){
 
             JOptionPane.showMessageDialog(this, "El año y las copias deben ser números.");
@@ -165,6 +251,19 @@ public class VentanaPrincipal extends JFrame {
         Libro libro = new Libro(titulo, autor, codigo, genero, anio, copias);
 
         if (biblioteca.agregarLibro(libro)){
+=======
+        }catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "El año y las copias deben ser números.");
+            return;
+        }
+        if (anio <= 0 || copias < 0) {
+            JOptionPane.showMessageDialog(this, "El año debe ser válido y las copias no pueden ser negativas.");
+            return;
+        }
+
+        Libro libro = new Libro(titulo, autor, codigo, genero, anio, copias);
+        if (biblioteca.agregarLibro(libro)) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
             JOptionPane.showMessageDialog(this, "Libro agregado correctamente.");
             limpiarCampos();
             mostrarTodos();
@@ -175,18 +274,29 @@ public class VentanaPrincipal extends JFrame {
 
     private void filtrarLibros() {
         String autor = txtBuscarAutor.getText().trim();
+<<<<<<< HEAD
 
         if (autor.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Escriba un actor para realizar la búsqueda.");
+=======
+        if (autor.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Escriba un autor para realizar la búsqueda.");
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
             return;
         }
         ArrayList<Libro> librosEncontrados = biblioteca.filtrarPorAutor(autor);
         actualizarTabla(librosEncontrados);
     }
+<<<<<<< HEAD
     private void actualizarTabla(ArrayList<Libro> libros){
         modeloTabla.setRowCount(0);
 
         for (Libro libro : libros){
+=======
+    private void actualizarTabla(ArrayList<Libro> libros) {
+        modeloTabla.setRowCount(0);
+        for (Libro libro : libros) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
             Object[] fila = {
                     libro.getTitulo(),
                     Libro.getAutor(),
@@ -198,6 +308,7 @@ public class VentanaPrincipal extends JFrame {
             modeloTabla.addRow(fila);
         }
     }
+<<<<<<< HEAD
     private void eliminarLibro(){
         int filaSeleccionada=tabla.getSelectedRow();
 
@@ -209,12 +320,28 @@ public class VentanaPrincipal extends JFrame {
         int respuesta = JOptionPane.showConfirmDialog(this, "¿Está segur@ de eliminar este libro?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
         if (respuesta == JOptionPane.YES_NO_OPTION){
             if (biblioteca.eliminartLibro(codigo)){
+=======
+    private void eliminarLibro() {
+        int filaSeleccionada = tabla.getSelectedRow();
+        if (filaSeleccionada == -1) {
+            JOptionPane.showMessageDialog(this, "Seleccione un libro de la tabla.");
+            return;
+        }
+        String codigo = modeloTabla.getValueAt(filaSeleccionada, 2).toString();
+        int respuesta = JOptionPane.showConfirmDialog(this, "¿Está seguro de eliminar este libro?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
+        if (respuesta == JOptionPane.YES_NO_OPTION) {
+            if (biblioteca.eliminartLibro(codigo) {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
                 JOptionPane.showMessageDialog(this, "Libro eliminado correctamente.");
                 mostrarTodos();
             }
         }
     }
+<<<<<<< HEAD
     private void limpiarCampos(){
+=======
+    private void limpiarCampos() {
+>>>>>>> 929552992666b9fce45df3312c0af320afe78f4c
         txtTitulo.setText("");
         txtAutor.setText("");
         txtCodigo.setText("");
